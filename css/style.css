@@ -1,4 +1,7 @@
-body{
+* {
+	transition: all .1s ease-in;
+}
+body {
 	font: 400 13.333px/1.6 "Open Sans", Arial, sans-serif;
 	color: #2c2c2c;
 }
@@ -44,23 +47,23 @@ img {
     background: linear-gradient(#444343, #5e5e5e);
     margin: 40px 0;
 }
-
 .b-nav-menu li {
 	display: inline-block;
 	margin-right: -3px;
 }
-
 .b-nav-menu a {
 	display: block;
-	margin-left: -1px;
-	padding: 12px 62px 12px 24px;
+	padding: 12px 35px;
+	font-size: 14px;
 	color: #fff;
+	text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.62);
+	text-align: center;
 }
-a.b-nav__third {
-	padding: 12px 62px;
+.b-nav-menu .a-main {
+	padding-left: 25px;
+	margin-left: 0;
 }
-
-a.b-nav__active {
+.b-nav-menu li:hover {
 	background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#4a4a4a, #2e2e2e); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#4a4a4a, #2e2e2e); /* For Opera 11.1 to 12.0 */
@@ -68,7 +71,6 @@ a.b-nav__active {
     background: linear-gradient(#4a4a4a, #2e2e2e);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-	padding: 12px 24px;
 }
 
 /* Aside navigation*/
@@ -84,7 +86,7 @@ a.b-nav__active {
 	padding: 16px 24px;
 	color: #656363;
 }
-a.b-aside__active {
+.b-aside-menu a:hover {
 	color: #2c2c2c;
 	padding-left: 34px;
 }
@@ -123,7 +125,7 @@ a.b-aside__active {
 .b-footer-left-menu a {
 	color: #2c2c2c;
 }
-a.b-footer__active {
+.b-footer-left-menu a:hover {
 	text-decoration: underline;
 }
 .b-footer-right {
