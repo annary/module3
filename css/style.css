@@ -15,10 +15,13 @@ img {
 .b-aside {
 	float: left;
 	width: 27%;
+	min-width: 240px;
+	margin-bottom: 20px;
 }
 .b-main {
 	float: right;
 	width: 73%;
+	min-width: 240px;
 }
 .Group_Main:before,
 .Group_Main:after,
